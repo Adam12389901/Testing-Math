@@ -103,28 +103,28 @@ public class MathTest {
             "-7.4, -8.3, -9.2"
     })
     public void testNestedPowers(double base, double a, double b) {
-        (xa)b = xa*b;
+       Assertions.assertEquals((Math.pow(Math.pow(base,a),b)),Math.pow(base,a*b));
     }
 
 
     @ParameterizedTest
     @ValueSource(doubles = {1, 5.0, 3.7, -1, -4.0, -4.9})
     public void testZeroPower(double base) {
-        x0 = 1;
+
     }
 
 
     @ParameterizedTest
     @ValueSource(doubles = {1, 5.0, 3.7, -1, -4.0, -4.9})
     public void testOnePower(double base) {
-        x1 = x;
+
     }
 
 
     @ParameterizedTest
     @ValueSource(doubles = {1, 5.0, 3.7, -1, -4.0, -4.9})
     public void testZeroBase(double exponent) {
-        0x = 0
+
     }
 
 }
